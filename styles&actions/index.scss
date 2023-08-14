@@ -15,6 +15,15 @@
 @import "./components/business-grow/business-grow.css";
 @import "./components/footer/footer.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  button {
+    font-size: 20px;
+  }
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: $main-black;
