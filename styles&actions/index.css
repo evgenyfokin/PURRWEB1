@@ -1,3 +1,4 @@
+
 @import "../fonts/fonts.css";
 @import "../node_modules/normalize.css/normalize.css";
 @import "./components/header/header.css";
@@ -13,6 +14,13 @@
 @import "./components/why-budss/why-budss.css";
 @import "./components/business-grow/business-grow.css";
 @import "./components/footer/footer.css";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
 body {
   font-family: "Outfit", sans-serif;
   background-color: #181818;
