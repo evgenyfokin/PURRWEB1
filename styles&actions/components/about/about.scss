@@ -12,17 +12,20 @@
     display: flex;
     justify-content: space-between;
     &-desc {
-
       p {
         font-size: 36px;
         font-weight: 600;
-        width: 397px;
+        max-width: 397px;
         background-image: url("../../../img/steak.svg");
         background-repeat: no-repeat;
-        padding-right: 12px;
+        padding-right: 18px;
         padding-bottom: 4px;
         background-position: right bottom;
       }
+      span {
+        white-space: nowrap;
+      }
+
     }
     &-features {
       display: grid;
