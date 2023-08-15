@@ -10,7 +10,6 @@
     max-width: 308px;
     z-index: 2;
     position: relative;
-    padding: 0 70px;
     img {
       width: 100%;
     }
@@ -69,6 +68,9 @@
 }
 
 @media (max-width: 600px) {
+  .budss-works__iphone {
+    max-width: 228px;
+  }
   .budss-works__text {
     font-size: 48px;
   }
