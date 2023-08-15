@@ -39,8 +39,9 @@
         <button class="button contactSales">Contact sales</button>
     </div>
     <picture class="hero__img">
-        <source srcset="img/hero.webp, img/hero-retina.webp" type="image/webp">
-        <source srcset="img/hero.png, img/hero-retina.webp" type="image/png">
+        <source srcset="img/hero.webp 1x, img/hero-retina.webp 2x" type="image/webp">
+        <source srcset="img/hero.webp 1x, img/hero-retina.webp 2x" type="image/webp">
+        <source srcset="img/hero.png 1x, img/hero-retina.png 2x" type="image/png">
         <img src="img/hero.png" alt="hero">
     </picture>
     <div class="menu" id="menu">
@@ -63,7 +64,7 @@
             <button class="button_shaped" id="closeModal1">
                 <img src="img/close-mini.svg" alt="close modal">
             </button>
-            <form action="" class="modal__content-form" id="form">
+            <form action="#" class="modal__content-form" id="form">
                 <label for="inputName">Name <span><a href="#">*</a></span></label>
                 <input required type="text" placeholder="Enter name" class="input" id="inputName">
                 <label for="inputEmail">Email <span><a href="#">*</a></span></label>
@@ -86,8 +87,8 @@
                 <img src="img/close-mini.svg" alt="close modal">
             </button>
             <picture>
-                <source srcset="img/success.webp, img/success-retina.webp" type="image/webp">
-                <source srcset="img/success.jpg, img/success-retina.jpg" type="image/png">
+                <source srcset="img/success.webp 1x, img/success-retina.webp 2x" type="image/webp">
+                <source srcset="img/success.jpg 1x, img/success-retina.jpg 2x" type="image/jpeg">
                 <img src="img/success.jpg" alt="hero">
             </picture>
             <h3>Thank you!</h3>
@@ -144,8 +145,8 @@
 </section>
 <div class="budss-works">
     <picture class="budss-works__iphone">
-        <source srcset="img/iphone.webp, img/iphone-retina.webp" type="image/webp">
-        <source srcset="img/iphone.png, img/iphone-retina.png" type="image/png">
+        <source srcset="img/iphone.webp 1x, img/iphone-retina.webp 2x" type="image/webp">
+        <source srcset="img/iphone.png 1x, img/iphone-retina.png 2x" type="image/png">
         <img src="img/success.jpg" alt="hero">
     </picture>
     <div class="budss-works__text budss-works__text-left1">
@@ -281,6 +282,6 @@
         </nav>
     </div>
 </footer>
-<script defer type="module" src="index.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>
