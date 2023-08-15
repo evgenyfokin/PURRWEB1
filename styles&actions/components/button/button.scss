@@ -13,6 +13,7 @@ button {
   color: $text-white;
   border-radius: 16px;
   font-size: 20px;
+  font-weight: 500;
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $main-black;
