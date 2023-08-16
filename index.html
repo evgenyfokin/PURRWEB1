@@ -70,7 +70,7 @@
                 <label for="inputEmail">Email <span><a href="#">*</a></span></label>
                 <input required type="text" placeholder="Enter email" class="input" id="inputEmail">
                 <label for="inputPhone">Phone Number <span>*</span></label>
-                <input required type="number" placeholder="🇷🇺 + 7 900 000 00 00 " class="input" id="inputPhone">
+                <input required type="text" placeholder="🇷🇺 + 7 900 000 00 00 " class="input" id="inputPhone">
                 <label for="inputCompany">Company</label>
                 <input type="text" placeholder="Enter company" class="input" id="inputCompany">
                 <label for="inputWebsite">Website/Store URL</label>
@@ -283,5 +283,29 @@
     </div>
 </footer>
 <script defer type="module" src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#inputPhone").inputmask({
+            mask: "+7 999 999 99 99",
+            placeholder: " ",
+            clearIncomplete: true,
+            oncomplete: function() {
+                var validCodes = ["495", "499", "812", "383", "343", "843", "831", "351", "8182", "4722", "4852"];
+                var enteredCode = $(this).val().split(' ')[1];
+                if (validCodes.includes(enteredCode)) {
+                    console.log('Valid phone number');
+                } else {
+                    alert('Invalid city/operator code!');
+                    $(this).val("");
+                }
+            },
+            onincomplete: function() {
+                alert('Please enter the full number');
+            }
+        });
+    });
+</script>
 </body>
 </html>

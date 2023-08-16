@@ -6,6 +6,7 @@
   height: 100%;
   font-size: 14px;
   display: none;
+  z-index: 3;
 }
 .modal__content {
   position: absolute;
@@ -78,6 +79,13 @@
 }
 .modal__content_success .button {
   width: 80%;
+}
+
+#cookie {
+  display: block;
+}
+#cookie button:hover {
+  box-shadow: none;
 }
 
 .modal__content_cookie {

@@ -2,6 +2,7 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .button {
@@ -15,14 +16,19 @@ button {
 }
 .button:hover {
   background-color: #181818;
+  box-shadow: inset 0 0 0 1px #954CED;
 }
 .button_disabled {
   background-color: #B9B9B9;
 }
+.button_disabled:hover {
+  color: #B9B9B9;
+  box-shadow: inset 0 0 0 1px #B9B9B9;
+}
 .button_decline {
   background-color: #FFFFFF;
   color: #181818;
-  border: 2px solid #954CED;
+  box-shadow: inset 0 0 0 1px #954CED;
 }
 .button_decline:hover {
   color: white;
@@ -34,6 +40,7 @@ button {
   background-color: inherit;
   transition: background-color 0.4s, color 0.4s;
   border-radius: 20px 20px 0 0;
+  font-size: 16px;
 }
 .header__above-button_active {
   background-color: #181818;

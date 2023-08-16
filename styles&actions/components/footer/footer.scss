@@ -29,6 +29,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      &-rights {
+        padding: 20px 0;
+      }
       &-list {
         list-style-type: none;
         display: flex;
@@ -45,6 +48,12 @@
 @media (max-width: 1170px) {
   .footer__links {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer__underline-links-list {
+    display: none;
   }
 }
 
